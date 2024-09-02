@@ -8,3 +8,5 @@ It's a fun combination! Starting with a fresh perspective and checking with scho
 I also make things for myself, of course. Many popular video games have public facing APIs that I will peer into and look for questions they could answer. I also like answering my probability questions by just programming simulations.
 
 I also play a lot of board games when I can. It's been a great way to learn how to teach abstract or unfamiliar concepts to a broad range of people. I'm pretty involved in the local board game enthusiast scene, but it's become more important to me to improve how I can be more inclusive and communicate to newcomers and not rely on shorthand phrases and slang that can plague a hobby and/or industry. It's something I also did in my school work; I don't want to force the audience to wrangle with new words when the subject matter of statistics may already be overwhelming.
+
+[My School Paper on Diabetes in Pima Indian Females](https://andy-mn.github.io/Portfolio/DiabetesPaper.html)
