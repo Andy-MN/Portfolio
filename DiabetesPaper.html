@@ -537,8 +537,7 @@ Access Research Atlast. Retrieved from USDA ERS: <a href="https://www.ers.usda.g
 <div id="code-used-in-project" class="section level1">
 <h1>Code used in project</h1>
 <p>This is the R script I used to create and evaluate models. This code
-was never intended for public viewing, so it is has not been edited to
-look better. It includes comments with URLs to websites I was
+was never intended for public viewing, so it is has not been edited for clarity. It includes comments with URLs to websites I was
 referencing as I was building the models, not all that were included in
 the paper’s reference section.</p>
 <pre class="r"><code>library(readr)
@@ -570,8 +569,8 @@ ggplot(diabetes, aes(x = pregnancies, y = outcome)) + geom_jitter() #appears to 
 table(diabetes$pregnancies, diabetes$outcome) 
 table(diabetes$pregnancies)
 
-diabetes &lt;- diabetes |&gt; mutate(virgin = ifelse(pregnancies &gt; 0, 0, 1)) #two groups, never pregnant and pregnant
-diabetes$virgin &lt;- factor(diabetes$virgin)
+diabetes &lt;- diabetes |&gt; mutate(zeropregnancies = ifelse(pregnancies &gt; 0, 0, 1)) #two groups, zero and non-zero pregnancies
+diabetes$zeropregnancies &lt;- factor(diabetes$zeropregnancies)
 
 
 #age
@@ -646,7 +645,7 @@ diabetes2 &lt;- select(diabetes, -c(bmi, age)) #remove redundant variables in cr
 dtrain &lt;- slice_sample(diabetes2, prop =0.8) #training data
 dtest &lt;- anti_join(diabetes2, dtrain) #testing data
 
-diabetes2 |&gt; select(-c(bmi.factor, outcome, virgin)) |&gt; cor() #correlations, be sure to remove factors!
+diabetes2 |&gt; select(-c(bmi.factor, outcome, zeropregnancies)) |&gt; cor() #correlations, be sure to remove factors!
 
 dmodel &lt;- glm(outcome~., data = dtrain, family = &quot;binomial&quot;)
 dm &lt;- step(dmodel, direction = &quot;both&quot;)
