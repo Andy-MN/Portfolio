@@ -10,7 +10,11 @@ I also make things for myself, of course. Many popular video games have public f
 I also play a lot of board games when I can. It's been a great way to learn how to teach abstract or unfamiliar concepts to a broad range of people. I'm pretty involved in the local board game enthusiast scene, but it's become more important to me to improve how I can be more inclusive and communicate to newcomers and not rely on shorthand phrases and slang that can plague a hobby and/or industry. It's something I also did in my school work; I don't want to force the audience to wrangle with new words when the subject matter of statistics may already be overwhelming.
 
 [My School Paper on Diabetes in Pima Indian Females](https://andy-mn.github.io/Portfolio/DiabetesPaper.html)
+
 [Data Driven Design for Healthcare](https://andy-mn.github.io/Portfolio/DataDrivenDesignForHealthcare.htm)
+
 [Machine Learning Techniques for Fraud Detection](https://andy-mn.github.io/Portfolio/MachineLearningTechniques.htm)
+
 [Predicting Video Game Sales](https://andy-mn.github.io/Portfolio/VideoGameSales.htm)
-[Balanced Scorecard Analysis for Asmodee Group](https://andy-mn.github.io/Portfolio/Balanced Scorecard Analysis for Asmodee Group.htm)
+
+[Balanced Scorecard Analysis for Asmodee Group](https://andy-mn.github.io/Portfolio/AnalysisforAsmodeeGroup.htm)
