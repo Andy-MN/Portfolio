@@ -1,0 +1,1562 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="VideoGameSales_files/filelist.xml">
+<link rel=Edit-Time-Data href="VideoGameSales_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Predicting Video Game Global Sales</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>atwill211</o:Author>
+  <o:LastAuthor>atwill211</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>302</o:TotalTime>
+  <o:Created>2024-10-26T02:13:00Z</o:Created>
+  <o:LastSaved>2024-10-26T02:13:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2152</o:Words>
+  <o:Characters>12272</o:Characters>
+  <o:Lines>102</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14396</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=dataStoreItem href="VideoGameSales_files/item0001.xml"
+target="VideoGameSales_files/props002.xml">
+<link rel=themeData href="VideoGameSales_files/themedata.thmx">
+<link rel=colorSchemeMapping href="VideoGameSales_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"Header Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"Footer Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:center 3.25in right 6.5in;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-link:"No Spacing Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
+	{mso-style-priority:37;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.NoSpacingChar
+	{mso-style-name:"No Spacing Char";
+	mso-style-priority:1;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"No Spacing";
+	mso-ansi-font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+span.textlayer--absolute
+	{mso-style-name:textlayer--absolute;
+	mso-style-unhide:no;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Header;}
+span.FooterChar
+	{mso-style-name:"Footer Char";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Footer;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:12.0pt;
+	mso-ansi-font-size:12.0pt;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("VideoGameSales_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("VideoGameSales_files/header.htm") fcs;
+	mso-endnote-separator:url("VideoGameSales_files/header.htm") es;
+	mso-endnote-continuation-separator:url("VideoGameSales_files/header.htm") ecs;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:0;
+	mso-title-page:yes;
+	mso-header:url("VideoGameSales_files/header.htm") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2052"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+
+<div class=WordSection1><w:Sdt SdtDocPart="t" DocPartType="Cover Pages"
+ DocPartUnique="t" ID="182024611">
+ <p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p><w:sdtPr></w:sdtPr></p>
+ <p class=MsoNormal style='line-height:200%'><!--[if gte vml 1]><v:shapetype
+  id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="Text_x0020_Box_x0020_131" o:spid="_x0000_s2051"
+  type="#_x0000_t202" style='position:absolute;margin-left:47.3pt;margin-top:261.2pt;
+  width:455pt;height:351.5pt;z-index:251660288;visibility:visible;
+  mso-wrap-style:square;mso-width-percent:790;mso-height-percent:350;
+  mso-wrap-distance-left:14.4pt;mso-wrap-distance-top:0;
+  mso-wrap-distance-right:14.4pt;mso-wrap-distance-bottom:0;
+  mso-position-horizontal:absolute;mso-position-horizontal-relative:margin;
+  mso-position-vertical:absolute;mso-position-vertical-relative:page;
+  mso-width-percent:790;mso-height-percent:350;mso-width-relative:margin;
+  mso-height-relative:page;v-text-anchor:top' o:gfxdata="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
+" filled="f" stroked="f" strokeweight=".5pt">
+  <v:textbox style='mso-fit-shape-to-text:t' inset="0,0,0,0">
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNoSpacing align=center style='margin-top:2.0pt;margin-right:
+     0in;margin-bottom:28.0pt;margin-left:0in;text-align:center;line-height:
+     200%'><span style='font-size:36.0pt;line-height:200%;color:#4472C4;
+     mso-themecolor:accent1'><w:Sdt
+      PrefixMappings="xmlns:ns0='http://purl.org/dc/elements/1.1/' xmlns:ns1='http://schemas.openxmlformats.org/package/2006/metadata/core-properties' "
+      Xpath="/ns1:coreProperties[1]/ns0:title[1]" Text="t"
+      StoreItemID="X_6C3C8BC8-F283-45AE-878A-BAB7291924A1" Title="Title"
+      ID="151731938">Predicting Video Game Global Sales</w:Sdt><o:p></o:p></span></p>
+     <p class=MsoNoSpacing align=center style='margin-top:2.0pt;margin-right:
+     0in;margin-bottom:2.0pt;margin-left:0in;text-align:center;line-height:
+     200%'><span style='font-size:14.0pt;line-height:200%;color:#1F4E79;
+     mso-themecolor:accent5;mso-themeshade:128;text-transform:uppercase'>Andrew
+     Williams<o:p></o:p></span></p>
+     <p class=MsoNoSpacing align=center style='margin-top:4.0pt;margin-right:
+     0in;margin-bottom:2.0pt;margin-left:0in;text-align:center;line-height:
+     200%'><span style='font-size:12.0pt;line-height:200%;color:#5B9BD5;
+     mso-themecolor:accent5;text-transform:uppercase'>BIA650 with professor
+     Oluwafunminiyi Awe<o:p></o:p></span></p>
+     <p class=MsoNoSpacing align=center style='margin-top:4.0pt;margin-right:
+     0in;margin-bottom:2.0pt;margin-left:0in;text-align:center;line-height:
+     200%'><span style='font-size:12.0pt;line-height:200%;color:#5B9BD5;
+     mso-themecolor:accent5;text-transform:uppercase'>St. Mary’s University<o:p></o:p></span></p>
+     <p class=MsoNoSpacing align=center style='margin-top:4.0pt;margin-right:
+     0in;margin-bottom:2.0pt;margin-left:0in;text-align:center;line-height:
+     200%'><span style='font-size:12.0pt;line-height:200%;color:#5B9BD5;
+     mso-themecolor:accent5;text-transform:uppercase'>February 2023<o:p></o:p></span></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+  <w:wrap type="square" anchorx="margin" anchory="page"/>
+ </v:shape><![endif]--><![if !vml]><img width="79%"
+ src="VideoGameSales_files/image001.png" align=left hspace=19
+ alt="Text Box: Predicting Video Game Global Sales&#13;&#10;ANDREW WILLIAMS&#13;&#10;BIA650 WITH PROFESSOR OLUWAFUNMINIYI AWE&#13;&#10;ST. MARY’S UNIVERSITY&#13;&#10;FEBRUARY 2023&#13;&#10;"
+ v:shapes="Text_x0020_Box_x0020_131"><![endif]><!--[if gte vml 1]><o:wrapblock><v:rect
+   id="Rectangle_x0020_132" o:spid="_x0000_s2050" style='position:absolute;
+   margin-left:-7.4pt;margin-top:0;width:43.8pt;height:77.75pt;z-index:251659264;
+   visibility:visible;mso-wrap-style:square;mso-width-percent:76;
+   mso-height-percent:98;mso-top-percent:23;mso-wrap-distance-left:9pt;
+   mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+   mso-wrap-distance-bottom:0;mso-position-horizontal:right;
+   mso-position-horizontal-relative:margin;mso-position-vertical-relative:page;
+   mso-width-percent:76;mso-height-percent:98;mso-top-percent:23;
+   mso-width-relative:page;mso-height-relative:page;v-text-anchor:bottom'
+   o:gfxdata="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
+5AUAAAAA
+" fillcolor="#4472c4 [3204]" stroked="f" strokeweight="1pt">
+   <o:lock v:ext="edit" aspectratio="t"/>
+   <v:textbox inset="3.6pt,,3.6pt">
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNoSpacing align=right style='text-align:right'><span
+      style='font-size:12.0pt;color:white;mso-themecolor:background1'><o:p>&nbsp;</o:p></span></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+   <w:wrap anchorx="margin" anchory="page"/>
+  </v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+  <table cellpadding=0 cellspacing=0 align=left>
+   <tr>
+    <td width=966 height=0></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width="7%" src="VideoGameSales_files/image002.png" v:shapes="Rectangle_x0020_132"></td>
+   </tr>
+  </table>
+  </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br clear=all
+ style='mso-special-character:line-break;page-break-before:always'>
+ </p>
+</w:Sdt>
+
+<h1 style='line-height:200%'>Abstract</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Publishers
+need to spend company funds on profit maximizing products, which has become
+more important as video game sales have increased, along with the associated
+costs of producing games. Linear regression is conducted to find the effects of
+genre, publisher, critical reception, and other categorical considerations on
+Global Sales. The final model weighs the value of a strong marketing campaign
+heavily, with User Scores being insignificant despite finding professional
+critic’s opinions significant enough to include. Future studies should
+experiment with further data stratification, as well as distinguishing the
+effects of marketing with the effects of being a “safe bet” game part of a
+larger franchise.</p>
+
+<h1 style='line-height:200%'>Introduction</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Video
+games are big business, growing in revenue year over year for decades <w:Sdt
+ Citation="t" ID="748386974"><!--[if supportFields]><span style='mso-element:
+ field-begin'></span><span style='mso-spacerun:yes'> </span>CITATION Omr20 \l
+ 1033 <span style='mso-element:field-separator'></span><![endif]--><span
+ style='mso-no-proof:yes'>(Wallach, 2020)</span><!--[if supportFields]><span
+ style='mso-element:field-end'></span><![endif]--></w:Sdt>. More types of games
+are regularly published, as the biggest firms diversify their offerings, while
+tools for amateur creators mature over time, all leading to more games being
+released in a year than ever before. At the same time, costs associated with
+developing games <span class=GramE>has</span> ballooned over time. The computer
+hardware gets more sophisticated, more capable of detail, more capable of
+handling more complex computations, demanding artists and programmers to take
+more time to create than it did just a few years ago <w:Sdt Citation="t"
+ ID="213772797"><!--[if supportFields]><span style='mso-element:field-begin'></span><span
+ style='mso-spacerun:yes'> </span>CITATION Rap18 \l 1033 <span
+ style='mso-element:field-separator'></span><![endif]--><span style='mso-no-proof:
+ yes'>(Koster, 2018)</span><!--[if supportFields]><span style='mso-element:
+ field-end'></span><![endif]--></w:Sdt>. As games get more expensive to make,
+they either need to become more expensive <span class=GramE>to</span> the
+consumer, or need to sell in greater numbers, to break even financially.</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>This
+gives rise to the need to <span class=GramE>discriminate</span> what kinds of
+games to produce and ultimately sell. Games are categorized by “genres” that
+describe the general gameplay experience of the product, as well as the
+“platform” it is available for sale on. Games may have multiple genres and may
+be available for many platforms. In addition, video games have a reasonably
+mature industry of writers who create product reviews for both video game
+platforms, as well as individual video games, and such media coverage can
+generate sales where marketing cannot.</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>To
+that end, the objective of this study is to <i>evaluate the effect of
+marketing, platform availability, genre, critical review, and how that can
+possibly affect the global sales of a video game.</i> Statistical modeling
+should provide some numerical insights to reinforce preconceived notions of
+what we see customers as valuing the most.</p>
+
+<h1 style='line-height:200%'>Methods</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Data
+was provided by the instructor of the course, and features data from
+Metacritic, including aggregate critic scores, aggregate user scores, and the
+number of critics/users that the aggregate includes. Both are measured on a
+base 10 scale – critics range from 0 to 100, while users range from 0 to 10
+with a single decimal point of precision. Because not every media outlet uses
+the same “rating system”, Metacritic converts into their 0-100 scale. For
+example, if a writer gives a game 4 out of 5 stars, Metacritic <span
+class=GramE>would</span> convert that into a score of 80 out of 100. Multiple
+new variables were created for the purpose of experimentation, such as
+converting the 0-100 scale back to a 5-star rating, as well as a variable
+called “80plus” that takes on a binary value depending on if the critic score
+is greater than or equal to 80. Historically, some game makers have received a
+monetary bonus if their game received a sufficiently high Metacritic rating <w:Sdt
+ Citation="t" ID="-1194221985"><!--[if supportFields]><span style='mso-element:
+ field-begin'></span><span style='mso-spacerun:yes'> </span>CITATION Wes12 \l
+ 1033 <span style='mso-element:field-separator'></span><![endif]--><span
+ style='mso-no-proof:yes'>(Yin-Poole, 2012)</span><!--[if supportFields]><span
+ style='mso-element:field-end'></span><![endif]--></w:Sdt>, so a threshold of
+80 was subjectively chosen based on being slightly lower than historical bonus
+thresholds.</p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Sales data is
+split into 3 different regions – Japan, Europe, and North America – and summed
+up as “Global Sales”, our dependent variable. Region specific sales will be
+evaluated separately to see how the generic “Global Sales” model explains the
+sales patterns in each region – a brief expansion There is also a “Marketing”
+variable to express the amount of marketing focus the game received, taking on
+a value of 0, 1, or 2. Due to the range of values in the sales data, multiple
+transformations were considered, but a logarithmic scale was settled on to
+better fit linear regression modeling. </p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:.5in;
+line-height:200%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Picture_x0020_6" o:spid="_x0000_i1038" type="#_x0000_t75"
+ alt="Chart, histogram&#10;&#10;Description automatically generated" style='width:312pt;
+ height:234pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image003.png" o:title="Chart, histogram&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=416 height=312
+src="VideoGameSales_files/image004.jpg"
+alt="Chart, histogram&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_6"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:.5in;
+line-height:200%'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_7" o:spid="_x0000_i1037" type="#_x0000_t75" alt="Chart&#10;&#10;Description automatically generated"
+ style='width:316.5pt;height:237.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image005.png" o:title="Chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=422 height=317
+src="VideoGameSales_files/image006.jpg"
+alt="Chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_7"><![endif]></span></p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Notably, there is
+no data about actual marketing budgets or general development costs in the
+dataset, as well as no record of the original price of the games. Both would
+greatly influence the amount of units required to profit from a given game. In
+addition, each video game platform is not equally popular, and a game console
+that sells twice the units is more likely to see sales of its associated games
+to be naturally greater than games available on less popular platforms. The
+only information on console sales in the data is derived from sales of “tie in”
+games: Wii Sports, the best-selling game in the dataset, was bundled for free
+with every new Nintendo Wii, so its sales <span class=GramE>are an
+approximation of</span> total Wii sales. The various platforms in the dataset
+were additionally generalized to be associated with their respective
+manufacturers: Nintendo, Sony Entertainment, or Microsoft. In other words,
+every game for Wii, <span class=SpellE>WiiU</span>, Game Boy Advance, etc.,
+will all have a dummy variable tag them as being on a “Nintendo” platform.</p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Ordinary Linear
+Regression will be the statistical test to evaluate the data’s ability to
+explain the variation in Global Sales. Criteria for selecting the final model
+was a combination of <span class=SpellE>Rsquare</span> value, <span
+class=SpellE>AICc</span>, and general model complexity. A variable such as “Developer”
+is categorical with many distinct values, and each would have a different
+coefficient associated with it, and very likely overfit the data. Individual
+effects were measured for each variable, as well as combined to fit multiple
+models for estimating Global Sales, and those models were also evaluated for
+effectiveness in explaining the three primary regions. All data transformations
+were done in R code before models and visualizations were generated with SAS
+Studio scripts.</p>
+
+<h1 style='line-height:200%'>Results</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Among
+the single effect models, Marketing proved to be the most powerful effect to
+include in the regression models. All four models discussed in this section
+include it, as the model <i>Global Sales = B<sub>1</sub>*Marketing + C </i>resulted
+in an R<sup>2</sup> of 0.53. <span class=GramE>The vast majority of</span>
+games in the dataset have a value <span class=GramE>of</span> Marketing = 0,
+indicating no marketing focus. Only 77 games have a Marketing Priority of 2.</p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
+ o:spid="_x0000_i1036" type="#_x0000_t75" alt="Chart, pie chart&#10;&#10;Description automatically generated"
+ style='width:245.25pt;height:184.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image007.png" o:title="Chart, pie chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=327 height=246
+src="VideoGameSales_files/image008.jpg"
+alt="Chart, pie chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_5"><![endif]></span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+first model fit was the “all inclusive” model (Model 1), with every independent
+variable included in the regression to serve as a baseline expectation. With an
+adjusted R<sup>2</sup> value of 0.69, it fits to the data reasonably well, but
+standard errors for many of the parameters render much of the estimates not
+meaningfully different from random chance. It also includes an overwhelming
+number of dummy variables that are removed from all the following models.</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Model
+2 is derived by removing statistically insignificant parameters from Model 1,
+resulting in 6 estimators: Marketing, the three main console manufacturers (Nintendo,
+Sony, Microsoft), Critic Scores, and Number of Critics who contributed to the
+score. Adjusted R<sup>2</sup> fell to 0.63 while model complexity fell
+dramatically. The effect size of each independent variable is reasonably sized
+as well – this model originally included User Scores, but while the parameter
+was found to be statistically insignificant, the effect size was miniscule. The
+Sony dummy variable had a slightly larger effect size than Nintendo or Microsoft,
+but the strongest effect remained the Marketing variable. Model 2 was
+ultimately selected as the “final” model, but two more models will be commented
+here.</p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>Model 3 is a
+variation of Model 2, replacing the generalized “platform” variables with the
+actual names of the consoles the game was sold for. R<sup>2</sup> values
+improved slightly here, but not all parameters were found to be statistically
+different from random chance. <span class=SpellE>AICc</span> criteria also
+found this model to be worse than Model 2, alongside the model’s inherent
+complexity making it harder to understand.</p>
+
+<p class=MsoNormal style='text-indent:.5in;line-height:200%'>When testing
+region specific models, Model 2 mapped well onto North America and Europe data
+well, with nearly identical results to the general model, but only yielded an R<sup>2</sup>
+value of 0.3 for Japan sales. Further experimentation was conducted to find a
+better model for Japan, which is labeled as Model 4 in the appendix.</p>
+
+<h1 style='line-height:200%'>Discussion</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Marketing
+being the best indicator of a best seller is no real surprise, and possibly
+misleading. Careful examination of the games in the dataset with the highest
+Global Sales, most of them are either part of a long running franchise with an
+established customer base, or games for the Nintendo Wii which had a
+substantial sales record each year it was sold, again yielding a large
+established customer base. Only a handful of the top 100 games in the database
+were the first entries of a new IP, such as <i>Gears of War, Driver, </i>or <i>Just
+Dance</i>. Most of the top 100 have a Marketing Priority of 2, and the lowest
+selling game with Marketing = 2 is <i>Battlefield One</i> at #198 in the Global
+Sales ranking. The concern here has to do with self-fulfilling prophecies: as
+these games have proven to sell in the past, it is easier to convince
+stakeholders to provide a substantial marketing budget on these games they
+likely view as “safe bets”, rather than push new, unproven projects. With
+expanded marketing, more customers are aware of the product, and thus greater
+sales are achieved on average. Further studies into this data should focus on
+separating the effects of the marketing campaigns with the effects of being
+part of a larger franchise, which would require significant effort and care.</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+data also does not handle “multiplatform” games appropriately enough, but given
+the timespan the dataset draws on, it is likely difficult to fix. Most of the
+data is between the years 2000 and 2016, and especially in the era where the
+market consisted of <span class=GramE>the Nintendo’s</span> Wii, Sony’s
+PlayStation 3, and Microsoft’s Xbox 360, the Wii would often receive entirely
+distinct versions of a video game bearing the same name as a game sold on
+PlayStation or Xbox, due to the Wii’s underperformance in hardware quality. So,
+a game such as <i>Call of Duty: Modern Warfare 3 </i>would be developed by a
+different company for the Wii version than the other versions, and often be
+substantially lower in quality as a result. The dataset simply treats each
+different version of the game as completely distinct, but it may be appropriate
+in a future study to merge sufficiently similar game versions (such as Xbox 360
+and PlayStation 3 versions).</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+final model finds some value in Critic Scores as a predictor for sales. This
+informs some strategy for the publisher: a game expected to receive lower
+scores from critics should be withheld from previews, instead of providing
+media preview copies ahead of the official street date, <span class=GramE>in
+order to</span> not undercut any marketing spent on the game. Critic Count is
+possibly a proxy for marketing, as games media companies probably find their
+readers are more likely to click on an article about <span class=GramE>games</span>
+they’re personally excited about rather than a game they’ve never heard of. Therefore,
+if a game has many critics reviewing it, it’s likely an indication the game is
+considered a “major” release no advertisement supported media company can
+ignore – the same companies that will run the marketing campaigns of the big
+games.</p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+“Genre” variable may have some value to examine in future studies; each of the
+three major game publishers have different tendencies to publish certain genres
+instead of others – a graph in the appendix explains the differences
+sufficiently. The main challenge here is the bias inherent in the variable.
+Much of modern gaming is comprised of games covering multiple genres of play. A
+“Shooter” may have elements of an “RPG” and/or “Puzzle” game, but only be
+labeled as the first. “Action” games cover a massive space of games, serving as
+a sort of catch-all for any game that has both a button to punch and a button
+to jump. Nonetheless, stratifying the data by genre may indicate marketing’s
+varying effects on sales. </p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>The
+dataset on a whole does not explain Japan sales patterns well. Metacritic is
+primarily aimed at English speaking publications, so opinions by local media in
+Japan is not factored into the Critic Scores. In addition, not every game makes
+it to Japan, or leave Japan; much of the data was recoded as “missing” because
+it had zero sales in Japan due to no local release. In Model 4, Microsoft
+publishing a game was a huge influence on the sales total for Japan. Microsoft
+has historically had a very tough time selling Xboxes in Japan <w:Sdt
+ Citation="t" ID="-1990016948"><!--[if supportFields]><span style='mso-element:
+ field-begin'></span><span style='mso-spacerun:yes'> </span>CITATION Jez21 \l
+ 1033 <span style='mso-element:field-separator'></span><![endif]--><span
+ style='mso-no-proof:yes'>(Corden, 2021)</span><!--[if supportFields]><span
+ style='mso-element:field-end'></span><![endif]--></w:Sdt>, so any game made
+for it will naturally sell poorly in Japan, hence the large effect size.</p>
+
+<w:Sdt SdtDocPart="t" DocPartType="Bibliographies" DocPartUnique="t"
+ ID="655877863">
+ <h1>References<span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;
+ line-height:107%;mso-ascii-font-family:"Times New Roman";mso-fareast-font-family:
+ Calibri;mso-fareast-theme-font:minor-latin;mso-hansi-font-family:"Times New Roman";
+ mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+ color:windowtext'><w:sdtPr></w:sdtPr></span></h1>
+ <w:Sdt Bibliography="t" ID="-573587230">
+  <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><!--[if supportFields]><span
+  style='mso-element:field-begin'></span><span
+  style='mso-spacerun:yes'> </span>BIBLIOGRAPHY <span style='mso-element:field-separator'></span><![endif]--><span
+  style='mso-no-proof:yes'>Corden, J. (2021, October 14). <i>Xbox Series X|S
+  consoles pass 100K units in Japan, beating the Xbox One by several years</i>.
+  Retrieved from Windows Central:
+  https://www.windowscentral.com/xbox-series-xs-consoles-pass-100k-units-japan-beating-xbox-one</span><span
+  style='mso-bidi-font-size:12.0pt;line-height:107%;mso-no-proof:yes'><o:p></o:p></span><w:sdtPr></w:sdtPr></p>
+  <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><span
+  style='mso-no-proof:yes'>Koster, R. (2018, January 23). <i>The cost of games</i>.
+  Retrieved from Venture Beat:
+  https://venturebeat.com/pc-gaming/the-cost-of-games/<o:p></o:p></span></p>
+  <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><span
+  style='mso-no-proof:yes'>Wallach, O. (2020, November 23). <i>50 Years of
+  Gaming History, by Revenue Stream (1970-2020)</i>. Retrieved from Visual
+  Capitalist:
+  https://www.visualcapitalist.com/50-years-gaming-history-revenue-stream/<o:p></o:p></span></p>
+  <p class=MsoBibliography style='margin-left:.5in;text-indent:-.5in'><span
+  style='mso-no-proof:yes'>Yin-Poole, W. (2012, March 15). <i>Obsidian Fallout
+  New Vegas deal with Bethesda meant bonus payment only with 85+ Metacritic </i>.
+  Retrieved from Eurogamer:
+  https://www.eurogamer.net/obsidian-fallout-new-vegas-deal-with-bethesda-meant-bonus-payment-only-with-85-metacritic<o:p></o:p></span></p>
+  <p class=MsoNormal><!--[if supportFields]><b><span style='mso-no-proof:yes'><span
+  style='mso-element:field-end'></span></span></b><![endif]--><o:p>&nbsp;</o:p></p>
+ </w:Sdt></w:Sdt>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<h1 style='line-height:200%'>Appendix (Click arrow to expand)</h1>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span><i>All
+model SAS output is available in full as a separate html attachment.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='mso-tab-count:1'>            </span>Model
+1 – <i>All inclusive<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_1"
+ o:spid="_x0000_i1035" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:273pt;height:165.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image009.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=364 height=221
+src="VideoGameSales_files/image010.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_1"><![endif]></span></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'>Model 2 – <i>Final Model<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
+ o:spid="_x0000_i1034" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:246pt;height:186pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image011.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=328 height=248
+src="VideoGameSales_files/image012.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_2"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8"
+ o:spid="_x0000_i1033" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:258.75pt;height:233.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image013.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=345 height=311
+src="VideoGameSales_files/image013.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_8"><![endif]></span></p>
+
+<p class=MsoNormal style='line-height:200%'>Model 3 –<i> Variant Model with
+more specific platform dummy variables<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
+ o:spid="_x0000_i1032" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:261.75pt;height:201.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image014.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=349 height=269
+src="VideoGameSales_files/image015.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_9"
+ o:spid="_x0000_i1031" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:268.5pt;height:393.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image016.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=358 height=525
+src="VideoGameSales_files/image016.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_9"><![endif]></span></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:200%'>Model 4 – <i>Japan specific model</i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
+ o:spid="_x0000_i1030" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:213.75pt;height:150pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image017.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=285 height=200
+src="VideoGameSales_files/image018.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_4"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_10"
+ o:spid="_x0000_i1029" type="#_x0000_t75" alt="Table&#10;&#10;Description automatically generated"
+ style='width:208.5pt;height:269.25pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image019.png" o:title="Table&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=278 height=359
+src="VideoGameSales_files/image020.png"
+alt="Table&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_10"><![endif]></span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><i>Genre
+patterns for the major three game publishers</i><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_11" o:spid="_x0000_i1028" type="#_x0000_t75" alt="Chart, bar chart&#10;&#10;Description automatically generated"
+ style='width:460.5pt;height:345.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image021.png" o:title="Chart, bar chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=614 height=461
+src="VideoGameSales_files/image021.png"
+alt="Chart, bar chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_11"><![endif]></span><i><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><i><o:p>&nbsp;</o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><i><o:p>&nbsp;</o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><i>Standardized
+Sales Comparisons: In order to compensate for different market sizes, the sales
+of each game <span class=GramE>was</span> standardized using the formula <b>X<sub>1new</sub>
+= (X<sub>1</sub> – min(X))/range(X)</b>. This results in all sales being in the
+range of 0 to 1. While this transformation was not used for any modeling, the
+visualizations are nonetheless interesting. Slopes further away from 1 indicate
+a game sold much better in one market than another.<o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_12"
+ o:spid="_x0000_i1027" type="#_x0000_t75" alt="Chart, scatter chart&#10;&#10;Description automatically generated"
+ style='width:356.25pt;height:267.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image022.png" o:title="Chart, scatter chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=475 height=357
+src="VideoGameSales_files/image023.jpg"
+alt="Chart, scatter chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_12"><![endif]></span><i><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_13"
+ o:spid="_x0000_i1026" type="#_x0000_t75" alt="Chart, scatter chart&#10;&#10;Description automatically generated"
+ style='width:369pt;height:276.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image024.png" o:title="Chart, scatter chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=492 height=369
+src="VideoGameSales_files/image025.jpg"
+alt="Chart, scatter chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_13"><![endif]></span><i><o:p></o:p></i></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_14"
+ o:spid="_x0000_i1025" type="#_x0000_t75" alt="Chart, scatter chart&#10;&#10;Description automatically generated"
+ style='width:383.25pt;height:4in;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="VideoGameSales_files/image026.png" o:title="Chart, scatter chart&#10;&#10;Description automatically generated"/>
+</v:shape><![endif]--><![if !vml]><img width=511 height=384
+src="VideoGameSales_files/image027.jpg"
+alt="Chart, scatter chart&#10;&#10;Description automatically generated" v:shapes="Picture_x0020_14"><![endif]></span><i><o:p></o:p></i></p>
+
+</div>
+
+</body>
+
+</html>
